@@ -11,6 +11,11 @@
 
     <modules>
         <module>cloud-provide-payment8001</module>
+        <module>cloud-consumer-order80</module>
+        <module>cloud-api-common</module>
+        <module>cloud-eureka-server7001</module>
+        <module>cloud-eureka-server7002</module>
+        <module>cloud-provide-payment8002</module>
     </modules>
 
     <properties>
@@ -104,14 +109,6 @@
                 <configuration>
                     <fork>true</fork>
                     <addResources>true</addResources>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>12</source>
-                    <target>12</target>
                 </configuration>
             </plugin>
         </plugins>
